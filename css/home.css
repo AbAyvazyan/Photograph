@@ -1,0 +1,160 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #21211f;
+}
+
+.menu>a{
+    color: white!important;
+    font-family: "Montserrat", Helvetica, Arial, s;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 0 7px;
+}
+
+.menu>a:nth-child(1){
+    color: dimgray!important;
+    border-bottom: white!important;
+}
+
+.menu>a:hover{
+    color: dimgray!important;
+}
+
+.navbar{
+    padding-top: 30px;
+}
+
+section{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    transform: translate3d(0px, 0px, 0px);
+    text-align: center;
+    padding-top: 50vh;
+}
+
+.section1{
+    background-image: url('../Images/revslide01.jpg');
+    padding-top: 0!important;
+}
+
+.section2{
+    background-image: url('../Images/revslide02.jpg');
+}
+
+.section3{
+    background-image: url('../Images/revslide03.jpg');
+}
+
+.section4{
+    background-image: url('../Images/revslide04.jpg');
+}
+
+.section5{
+    background-image: url('../Images/revslide05.jpg');
+}
+
+.section6{
+    background-image: url('../Images/revslide06.jpg');
+}
+
+.section7{
+    background-image: url('../Images/revslide07.jpg');
+}
+
+section>p{
+    color: white;
+    font-family: "Montserrat", Helvetica, Arial, s;
+    font-size: 75%;
+    font-style: normal;
+    font-weight: bolder;
+    letter-spacing: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+.s1p1{
+    margin-top: 25vh;
+}
+
+footer{
+    height: 30vh;
+    width: 100%;
+    padding: 10vh;
+    color: rgb(119, 119, 119)!important;
+    font-size: 13px;
+    font-family: "Montserrat", Helvetica, Arial, s;
+}
+
+footer>div{
+    display: inline-block;
+}
+
+.fd2{
+    float: right;
+}
+
+.fd2>img{
+    width: 20px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.top{
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(63, 63, 63);
+    text-align: center;
+    color: rgb(136, 136, 136);
+    cursor: pointer;
+    position: fixed;
+    right: 25px;
+    bottom: 50px;
+    opacity: 0;
+    font-family: "Montserrat", Helvetica, Arial, s;
+    border-radius: 5px;
+    user-select: none;
+}
+
+.top:hover{
+    color: white;
+    transform: scale(1.1);
+}
+
+.top>p{
+    font-size: 10px;
+    font-weight: 800;
+}
+
+@media screen and (max-width: 440px) and (min-width: 320px)  {
+    section>p {
+      letter-spacing: 7px;
+    }
+  }
+
+
+  @media screen and (max-width: 650px) and (min-width: 440px)  {
+   section>p {
+     letter-spacing: 15px;
+   }
+ }
+
+
+@media screen and (max-width: 900px) and (min-width: 650px)  {
+    section>p {
+      letter-spacing: 25px;
+    }
+  } 
+
+  @media screen and (max-width: 1100px) and (min-width: 900px)  {
+    section>p {
+      letter-spacing: 35px;
+    }
+  } 
+  

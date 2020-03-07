@@ -1,0 +1,146 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #21211f;
+}
+
+.menu>a{
+    color: white!important;
+    font-family: "Montserrat", Helvetica, Arial, s;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 0 7px;
+}
+
+.menu>a:nth-child(2){
+    color: dimgray!important;
+    border-bottom: white!important;
+}
+
+.menu>a:hover{
+    color: dimgray!important;
+}
+
+.navbar{
+    padding-top: 30px;
+}
+
+h5{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 5px;
+    font-family: "Montserrat", Helvetica, Arial, s;
+    font-style: normal;
+    font-weight: 600;
+}
+
+section{
+    padding-top: 30px;
+    position: relative;
+}
+
+main{
+    padding-top: 100px;
+}
+
+.line{
+    padding-bottom: 20px;
+    height: 100%;
+}
+
+.line img{
+    width: 100%;
+}
+
+.line img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: dimgray 0 0 15px;
+}
+
+footer{
+    height: 30vh;
+    width: 100%;
+    padding: 10vh;
+    color: rgb(119, 119, 119)!important;
+    font-size: 13px;
+    font-family: "Montserrat", Helvetica, Arial, s;
+    background-color: rgb(39, 39, 39);
+}
+
+footer>div{
+    display: inline-block;
+}
+
+.fd2{
+    float: right;
+}
+
+.fd2>img{
+    width: 20px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.top{
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(63, 63, 63);
+    text-align: center;
+    color: rgb(136, 136, 136);
+    cursor: pointer;
+    position: fixed;
+    right: 25px;
+    bottom: 50px;
+    opacity: 0;
+    font-family: "Montserrat", Helvetica, Arial, s;
+    border-radius: 5px;
+    user-select: none;
+}
+
+.top:hover{
+    color: white;
+    transform: scale(1.1);
+}
+
+.top>p{
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.cover{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 123;
+    background-color: rgba(80, 80, 80, 0.8);
+    top: 0;
+    display: none;
+    text-align: center;
+    padding-left: 30vw;
+}
+
+
+.coverimage{
+    top: 6vh;
+    height: 90vh;
+    position: fixed;
+    z-index: 125;
+    display: none;
+}
+
+.exit{
+    position: fixed;
+    top: 10vh;
+    background-color: black;
+    right: 10vw;
+    color: white;
+    cursor: pointer;
+    z-index: 125;
+    user-select: none;
+    display: none;
+}

@@ -1,0 +1,182 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    background-color: transparent!important;
+}
+
+.menu>a{
+    color: white!important;
+    font-family: "Montserrat", Helvetica, Arial, s;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 0 7px;
+}
+
+.menu a:nth-child(4){
+    color: dimgray!important;
+    border-bottom: white!important;
+}
+
+.menu>a:hover{
+    color: dimgray!important;
+}
+
+.navbar{
+    position: absolute;
+    width: 100%;
+}
+
+
+
+main{
+    background-image: url("../Images/cam.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+form{
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    vertical-align: middle;
+    margin-top: 30px;
+}
+
+h4{
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+}
+
+input{
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+    background-color: transparent;
+    color: white;
+    padding: 0 10px;
+    outline: none;
+    border: 1px solid dimgray;
+}
+
+input:focus , textarea{
+    background-color: rgba(65, 65, 65, 0.8);
+}
+
+textarea{
+    width: 100%;
+    height: 100px;
+    color: white;
+    padding: 10px;
+    outline: none;
+    resize: none;
+    background-color: transparent;
+    border: 1px solid dimgray;
+}
+
+button{
+    width: 150px;
+    outline: none;
+    height: 50px;
+    color: white;
+    background-color: rgba(150, 150, 150,0.8);
+    border: 5px solid dimgray;
+    margin-top: 20px;
+    position: relative;
+}
+
+.back{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 20;
+    padding-top: 35vh;
+    background-color: rgba(65, 65, 65, 0.8);
+    display: none;
+}
+
+.add{
+    background-color: white;
+    width: 50vw;
+    height: 30vh;
+    text-align: center;
+    line-height:30vh;
+    margin: 0 auto;
+    font-size: 20px;
+    color: rgb(109, 175, 43);
+    display: none;
+}
+
+.exit{
+    position: absolute;
+    right: 30vh;
+    top: 20vh;
+    cursor: pointer;
+    display: none;
+}
+
+.button::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10%;
+    background: rgb(63, 59, 59);
+    height: 0.3em;
+    right: 10%;
+    top: -5px;
+    transform: skewX(-45deg);
+    -webkit-transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1); 
+     transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.button::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10%;
+    background: rgb(63, 59, 59);
+    height: 0.3em;
+    right: 80%;
+    bottom: -5px;
+    transform: skewX(45deg);
+    -webkit-transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1); 
+     transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.button:hover::after{
+    right: 10%;
+}
+
+.button:hover::before{
+    right:80%;
+} 
+
+.second{
+    position: absolute;
+    bottom: -5px;
+    left: 20%;
+    width: 10px;
+    height: 5px;
+    background-color: red;
+}
+
+
+@media screen and (max-width: 510px) and (min-width: 320px)  {
+    .add{
+        font-size: 10px;
+    }
+  }
+
+@media screen and (max-width: 650px) and (min-width: 510px)  {
+   .add{
+       font-size: 15px;
+   }
+}
