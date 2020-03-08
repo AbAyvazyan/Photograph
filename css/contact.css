@@ -169,7 +169,7 @@ button{
 }
 
 
-@media screen and (max-width: 510px) and (min-width: 320px)  {
+@media screen and (max-width: 510px) and (min-width: 310px)  {
     .add{
         font-size: 10px;
     }
